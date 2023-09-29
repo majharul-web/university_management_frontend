@@ -1,15 +1,19 @@
 "use client";
-import React, { useState } from "react";
+
+import { useState } from "react";
 import { Layout, Menu } from "antd";
+import { getUserInfo } from "@/services/auth.service";
 import { sidebarItems } from "@/constant/sidebarItems";
-import { USER_ROLE } from "@/constant/role";
 
 const { Sider } = Layout;
 
-const Sidebar = () => {
+const SideBar = () => {
   const [collapsed, setCollapsed] = useState(false);
 
-  const user = USER_ROLE.SUPER_ADMIN;
+  // const role = USER_ROLE.ADMIN;
+  const { role } = getUserInfo() as any;
+  // console.log(role);
+
   return (
     <Sider
       collapsible
@@ -31,14 +35,14 @@ const Sidebar = () => {
           fontSize: "2rem",
           textAlign: "center",
           fontWeight: "bold",
-          marginBottom: "1.5rem",
+          marginBottom: "1rem",
         }}
       >
-        PH university
+        UMS
       </div>
-      <Menu theme='dark' defaultSelectedKeys={["1"]} mode='inline' items={sidebarItems(user)} />
+      <Menu theme='dark' defaultSelectedKeys={["1"]} mode='inline' items={sidebarItems(role)} />
     </Sider>
   );
 };
 
-export default Sidebar;
+export default SideBar;
