@@ -1,11 +1,20 @@
 "use client";
 
-const Error = () => {
+import { Row } from "antd";
+
+const ErrorPage = () => {
   return (
-    <div>
-      <h3>There was an Error!</h3>
-    </div>
+    <Row
+      justify='center'
+      align='middle'
+      style={{
+        height: "100vh",
+        color: "red",
+      }}
+    >
+      <h1>Something Went Wrong!</h1>
+    </Row>
   );
 };
 
-export default Error;
+export default ErrorPage;
