@@ -1,5 +1,5 @@
 "use client";
-import { Button, Col, Input, Row } from "antd";
+import { Button, Col, Row, message } from "antd";
 import loginImage from "../../assets/login-image.png";
 import Image from "next/image";
 import { SubmitHandler } from "react-hook-form";
@@ -26,6 +26,7 @@ const LoginPage = () => {
       // console.log(res);
       if (res?.accessToken) {
         router.push("/profile");
+        message.success("User logged in successfully!");
       }
       storeUserInfo({ accessToken: res?.accessToken });
 
