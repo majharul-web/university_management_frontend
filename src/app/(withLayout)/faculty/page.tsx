@@ -1,9 +1,7 @@
-import React from "react";
-
 const FacultyPage = () => {
   return (
     <div>
-      <h3>Faculty page</h3>
+      <h1>FacultyPage</h1>
     </div>
   );
 };

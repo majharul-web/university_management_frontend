@@ -3,8 +3,8 @@ import { Button, Row } from "antd";
 const NotFoundPage = () => {
   return (
     <Row
-      justify='center'
-      align='middle'
+      justify="center"
+      align="middle"
       style={{
         height: "100vh",
       }}

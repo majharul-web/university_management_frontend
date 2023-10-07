@@ -13,14 +13,18 @@ const UMBreadCrumb = ({
   const breadCrumbItems = [
     {
       title: (
-        <Link href='/'>
+        <Link href="/">
           <HomeOutlined />
         </Link>
       ),
     },
     ...items.map((item) => {
       return {
-        title: item.link ? <Link href={item.link}>{item.label}</Link> : <span>{item.label}</span>,
+        title: item.link ? (
+          <Link href={item.link}>{item.label}</Link>
+        ) : (
+          <span>{item.label}</span>
+        ),
       };
     }),
   ];

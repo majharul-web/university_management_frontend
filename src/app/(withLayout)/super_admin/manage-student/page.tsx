@@ -18,8 +18,8 @@ const ManageStudentsPage = () => {
         ]}
       />
       <h1>Student List</h1>
-      <Link href='/super_admin/manage-student/create'>
-        <Button type='primary'>Create</Button>
+      <Link href="/super_admin/manage-student/create">
+        <Button type="primary">Create</Button>
       </Link>
     </div>
   );

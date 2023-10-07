@@ -1,5 +1,6 @@
-import { authApi } from "./api/authApi";
+import { baseApi } from "./api/baseApi";
 
 export const reducer = {
-  [authApi.reducerPath]: authApi.reducer,
-};
+   [baseApi.reducerPath]: baseApi.reducer,
+}
+

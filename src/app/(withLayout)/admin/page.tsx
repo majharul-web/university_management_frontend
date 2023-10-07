@@ -1,9 +1,7 @@
-import React from "react";
-
 const AdminPage = () => {
   return (
     <div>
-      <h3>This is admin page</h3>
+      <h1>Welcome To Admin Profile</h1>
     </div>
   );
 };

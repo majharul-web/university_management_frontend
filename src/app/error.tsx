@@ -5,8 +5,8 @@ import { Row } from "antd";
 const ErrorPage = () => {
   return (
     <Row
-      justify='center'
-      align='middle'
+      justify="center"
+      align="middle"
       style={{
         height: "100vh",
         color: "red",
